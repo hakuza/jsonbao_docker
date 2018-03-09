@@ -1,0 +1,3 @@
+[submodule "compare_courses"]
+	path = compare_courses
+	url = git@github.com:hakuza/compare_courses.git
