@@ -43,7 +43,7 @@ services:
       - 'payment'
       - 'compare'
     ports:
-      - '3000:3000'
+      - '80:3000'
 
   database:
     image: mongo:latest
