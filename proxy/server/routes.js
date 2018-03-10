@@ -13,7 +13,7 @@ router.get('/description', (req, res) => {
 
 router.get('/feedback', (req, res) => {
   console.log('feedback');
-  request('http://feedback:3002/feedback').pipe(res);
+  request('http://feedback:3002/feedback', { qs: req.query }).pipe(res);
 });
 
 router.get('/courses', (req, res) => {
