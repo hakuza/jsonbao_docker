@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const request = require('request');
 
 router.get('/compare', (req, res) => {
   request('http://compare:3004/compare', { qs: req.query }).pipe(res);
