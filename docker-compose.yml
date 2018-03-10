@@ -35,7 +35,7 @@ services:
       - '3004:3004'
 
   proxy:
-    image: jsonbao/proxy
+    build: proxy/
     depends_on:
       - 'description'
       - 'expanded'
