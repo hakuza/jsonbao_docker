@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/../public'));
 
 app.use(parser.urlencoded({ extended: false }));
 app.get('/compare', (req, res) => {
-  request('http://localhost:3004/compare', { qs: req.query }).pipe(res);
+  request('http://compare:3004/compare', { qs: req.query }).pipe(res);
 });
 
 const port = 3000;
