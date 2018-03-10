@@ -17,7 +17,7 @@ router.get('/feedback', (req, res) => {
 });
 
 router.get('/courses', (req, res) => {
-  console.log('courses');
+  console.log('payment');
   request('http://payment:3003/courses').pipe(res);
 });
 

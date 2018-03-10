@@ -15,7 +15,7 @@ services:
     ports:
       - '3005:3005'
   
-  feedback:
+  feedback: 
     image: uhan19/feedback_feedback
     depends_on:
       - 'database'
@@ -35,7 +35,7 @@ services:
       - '3004:3004'
 
   proxy:
-    build: proxy/
+    image: jsonbao/proxy
     depends_on:
       - 'description'
       - 'expanded'
