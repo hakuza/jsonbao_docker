@@ -1,7 +1,9 @@
 {
   "name": "proxy",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "start": "node ./server/index.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
