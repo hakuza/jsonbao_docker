@@ -1,10 +1,6 @@
 const router = require('express').Router();
 const request = require('request');
 
-router.get('/compare', (req, res) => {
-  request('http://compare:3004/compare', { qs: req.query }).pipe(res);
-});
-
 router.get('/load', (req, res) => {
   request('http://expanded:3005/load').pipe(res);
 });
@@ -21,4 +17,7 @@ router.get('/courses', (req, res) => {
   request('http://payment:3003/courses').pipe(res);
 });
 
+router.get('/compare', (req, res) => {
+  request('http://compare:3004/compare', { qs: req.query }).pipe(res);
+});
 module.exports = router;
