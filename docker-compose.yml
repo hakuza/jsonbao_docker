@@ -5,3 +5,9 @@ services:
     image: jsonbao/compare
     ports:
       - '3004:3004'
+  proxy:
+    build: proxy/
+    depend_on:
+      - 'compare'
+    ports:
+      - '3000:3000'
