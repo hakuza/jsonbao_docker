@@ -7,7 +7,7 @@ services:
       - '3004:3004'
   proxy:
     build: proxy/
-    depend_on:
+    depends_on:
       - 'compare'
     ports:
       - '3000:3000'
